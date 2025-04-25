@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7.1</title>
+  </head>
+  <body></body>
+  <script>
+    const sum = (function () {
+      let total = 0;
+      return function (num) {
+        total += num;
+        console.log(total);
+        return total;
+      };
+    })();
+    sum(4);
+    sum(6);
+    sum(10);
+    sum(7);
+  </script>
+</html>
